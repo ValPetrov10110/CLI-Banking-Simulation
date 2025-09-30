@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 
+// Instead of a vector I will be using the database (SQLite) to be a storage container
+
 // This will be the base class for every other special user moving forward
 class User {
 public:
@@ -48,6 +50,12 @@ void loginPortal() {
     system("cls");
     std::cout <<"\tLogin Portal\n";
     std::cout << "--------------------\n";
+    std::cout << "\tEmail: ";
+    std::string email{};
+    std::cin >> email;
+    std::cout << "\tPassword: ";
+    std::string password{};
+    std::cin >> password;
 }
 
 void registrationPortal() {
