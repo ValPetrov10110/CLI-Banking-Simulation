@@ -5,9 +5,13 @@
 class User {
 public:
 
+
 private:
 
 };
+
+void loginPortal();
+void registrationPortal();
 
 int main() {
 
@@ -27,6 +31,7 @@ int main() {
             break;
 
         case 2:
+            loginPortal();
             break;
 
         case 3:
@@ -38,3 +43,14 @@ int main() {
 
     return EXIT_SUCCESS;
 }
+
+void loginPortal() {
+    system("cls");
+    std::cout <<"\tLogin Portal\n";
+    std::cout << "--------------------\n";
+}
+
+void registrationPortal() {
+
+}
+
